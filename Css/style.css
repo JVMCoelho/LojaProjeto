@@ -1,0 +1,143 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background-color: #f4f1ed; /* Cor de fundo */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Cor do texto */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #d3bfa4; /* Cor do topo */
+  display: flex; /* Itens lado a lado */
+  justify-content: space-between; /* Espaço entre eles */
+  align-items: center; /* Alinha no centro */
+  padding: 1rem;
+  flex-wrap: wrap; /* Quebra em telas menores */
+}
+
+/* Título da loja */
+header h1 {
+  color: #5a4634; /* Cor do título */
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Campo de busca */
+#search {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  margin: 0 1rem;
+}
+
+/* Ícones do cabeçalho (login, carrinho...) */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Formulário de login */
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Campo de texto do formulário */
+form input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Botão de login */
+form button {
+  background-color: #5a4634;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+
+/* Imagem principal do site */
+.imagem-destaque img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover; /* Preenche sem distorcer */
+}
+
+/* Lista de produtos */
+.produtos {
+  display: grid; /* Grade de produtos */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Cada item de produto */
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.2s;
+}
+
+/* Efeito ao passar o mouse no item */
+.item:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do produto */
+.item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+/* Zoom na imagem */
+.item img:hover {
+  transform: scale(1.1);
+}
+
+/* Preço do produto */
+.preco {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #5a4634;
+}
+
+/* Botão "Adicionar ao carrinho" */
+.item button {
+  background-color: #d3bfa4;
+  color: #5a4634;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Seção Look da Semana */
+.look-semana {
+  padding: 2rem;
+  background-color: #e8e0d1;
+  text-align: center;
+}
+
+/* Imagem do look da semana */
+.look-semana img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Zoom na imagem do look */
+.look-semana img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maya Fashion</title>
+  <link rel="stylesheet" href="Css/style.css" />
+  <script src="Js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Maya Fashion</h1>
+    <input type="text" id="search" placeholder="Buscar..." />
+    <div class="header-icons">
+      <form onsubmit="event.preventDefault(); login();">
+        <input type="email" id="email" placeholder="E-mail" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Login</button>
+      </form>
+      <span id="cart-count">🛒 (0 itens) - Total: R$ <span id="total">0,00</span></span>
+    </div>
+  </header>
+
+  <section class="imagem-destaque">
+    <img src="Fotos/Img/BolsaBase.png" alt="Bolsa marrom com fecho dourado" />
+  </section>
+
+  <section class="produtos">
+    <div class="item" data-nome="roupa" data-preco="129.99">
+      <img src="Fotos/Img/Roupa.jpeg" alt="Duas mulheres sorrindo, usando roupas brancas leves" />
+      <p>Roupa</p>
+      <span class="preco">R$ 129,99</span>
+      <button onclick="adicionarAoCarrinho('Roupa', 129.99)">Adicionar ao carrinho</button>
+    </div>
+    <div class="item" data-nome="acessorio" data-preco="299.99">
+      <img src="fotos/Img/AnaAcessorios.jpeg" alt="Mulher sorrindo levemente, usando colar, brincos e anéis dourados" />
+      <p>Acessório</p>
+      <span class="preco">R$ 299,99</span>
+      <button onclick="adicionarAoCarrinho('Acessório', 299.99)">Adicionar ao carrinho</button>
+    </div>
+    <div class="item" data-nome="vestido" data-preco="1499.99">
+      <img src="Fotos/Img/Vestido.png" alt="Mulher usando vestido bege sem mangas, em fundo da mesma cor" />
+      <p>Vestido</p>
+      <span class="preco">R$ 1.499,99</span>
+      <button onclick="adicionarAoCarrinho('Vestido', 1499.99)">Adicionar ao carrinho</button>
+    </div>
+    <div class="item" data-nome="bolsa" data-preco="299.99">
+      <img src="Fotos/Img/Bolsa.jpg" alt="Mulher com roupa branca segurando bolsa de couro marrom com jornal dentro" />
+      <p>Bolsa</p>
+      <span class="preco">R$ 299,99</span>
+      <button onclick="adicionarAoCarrinho('Bolsa', 299.99)">Adicionar ao carrinho</button>
+    </div>
+  </section>
+
+  <section class="look-semana">
+    <h2>Look da Semana</h2>
+    <div class="look">
+      <img src="Fotos/Img/Modelo2.jpg" alt="Mulher com vestido branco rendado segurando bolsa redonda de palha" width="25%"
+        height="30%" />
+    </div>
+  </section>
+
+
+</body>
+
+</html>
