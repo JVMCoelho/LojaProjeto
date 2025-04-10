@@ -48,4 +48,4 @@ Durante a construção deste projeto, aprofundei meus conhecimentos em:
 ---
 
 **Aluno:** João Vitor Marques Coelho  
-**Turma:** 33b ADS
+**Turma:** B. ADS
